@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Objects
+    </title>
+  </head>
+  <body>
+    <script>
+      /*
+      //What is an Object?
+      //An Object groups multiple values together.
+      //defining object.
+      //An object in programming represents real life instances of objects like product etc.
+      const product = { //In javascript, we can save object in a constant.
+        name: 'socks', // name and price are the properties of the object(product)
+        price: 1090
+      };
+      console.log(product);
+      
+      //accessing the property of the object
+      console.log(product.name);
+      console.log(product.price);
+
+      //modifying the value of the property of the object
+      product.name = 'cotton socks';
+      console.log(product);
+
+      //Adding a new property to an object.
+      product.newProperty = true;
+      console.log(product);
+
+      //deleting a property of an object.
+      delete product.newProperty;
+      console.log(product);
+
+      //object is a datatype.
+      console.log(typeof product);
+      
+
+      const product2 = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        //Nested Object: Object as a property of an object
+        rating: {
+          stars: 4.5,
+          count: 87 
+        },
+        //we can add a function as a property of the object.
+        //function inside an object is also called a method.
+        func: function function1(){
+          console.log('function inside object');
+        } 
+      };
+
+      console.log(product2);
+      console.log(product2.name); //dot notation to access the property of object 
+      console.log(product2['name']); //bracket notation to access the property of object.
+      console.log(product2['delivery-time']);
+      
+      //accessing the innerObject(rating) inside the object product2.
+      console.log(product2.rating.count);
+      
+      product2.func();
+
+      console.log(typeof console.log); //console is an object, log is its method.
+
+      //There are two more built-in objects in javascript.
+      //JSON : JavaScript Object Notation.
+      //local storage
+      //JSON is a syntax similar to javascript object but has less features.
+      //JSON syntax is understandable by more languages than javascript.
+      //We use JSON to send data between two computers.
+      //We also use JSON to store data.
+      //local storage is used to store the value of variables permenantly, even if we refresh our webpage.
+      //local storage only support string.
+    
+      //Converting javascript object into json object. 
+      console.log(JSON.stringify(product2));
+      console.log(typeof JSON.stringify(product2));
+      
+      //Converting json object into javascript object.
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
+      
+      //using local storage to save values.
+      localStorage.setItem('message', 'hello');
+
+      //access values in the local storage.
+      console.log(localStorage.getItem('message'));
+      */
+      
+      console.log('hello'.length); //return the length of the string 'hello'
+      console.log('hello'.toUpperCase()); //return the string in the uppercase.
+
+      //object are references.
+      
+      const object1 = { //message is stored in the memory. object1 stores the reference of the memory address.
+        message: 'hello'
+      };
+
+
+      const object2 = object1 //now object1 and object2 points to the same memory location.(copying the reference)
+
+      object1.message = 'Good job!';
+      console.log(object1.message); //we are still able to change the value of the message even though we created object with datatype constant.
+      console.log(object2);
+
+      //we cannot compare the objects
+      const object3 = {
+        message: 'Good job!'
+      };
+      
+      console.log(object3 == object1); //returns false(comparing the reference), it will assign a different memory loation to object3 even though the content is same.
+
+      console.log(object2==object1); //returns true because object2 points the same memory location as object1.
+      
+      object4 = {
+        message: 'Good job!',
+        price: 799
+
+      };
+      
+      
+      //destructing: easier way to take properties out of an object.can store data from object into a constant.
+      const {message, price} = object4; 
+      console.log(message);
+      console.log(price);
+
+      //shorthand property
+      const object5 = {
+        message: message,
+        price: price,
+        //method: function function1(){
+        //  console.log('method');
+        //}
+        //Another way to create a method called a short hand method.
+        method(){
+          console.log('method');  
+        }
+      };
+
+      console.log(object5);
+      object5.method();
+    </script>
+  </body>
+</html>

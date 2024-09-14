@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_11-t
+    </title>
+  </head>
+  <body>
+    <script>
+      const array1 = ['egg', 'apple', 'egg', 'egg', 'ham'];
+      //console.log(array1.reverse());
+      function removeEgg(foods){
+        const reverse_order_array = foods.reverse();
+        const result = [];
+        let countofegg = 0;
+        for(let index=0; index<reverse_order_array.length; index++){
+          if(reverse_order_array[index]==='egg' && countofegg<2){
+            countofegg++;
+            continue;
+          }
+          else{
+            result.push(reverse_order_array[index]);
+          }
+        }
+        return(result.reverse());
+      }
+      console.log(removeEgg(array1));
+      
+    </script>
+  </body>
+</html>

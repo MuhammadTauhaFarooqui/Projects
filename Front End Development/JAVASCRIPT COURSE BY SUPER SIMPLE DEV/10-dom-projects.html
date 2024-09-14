@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+    <!-- '.' is a class selector.-->
+    <style>
+      body{
+        font-family: Arial;
+        padding-bottom: 110px;
+      }
+
+     .subscribe-button{
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      border: none;
+      font-weight: 700;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 35px;
+      cursor: pointer;
+     }
+
+     .is-subscribed{
+        background-color: rgb(240, 240, 240);
+        color: black;
+     }
+
+     .cost-input{
+      
+      padding-left: 10px;
+      padding-right: 33px;
+      padding-top: 12px;
+      padding-bottom: 10px;
+        
+      }
+
+      .cost-input::placeholder{
+        font-size: 15px;
+      }
+
+      .calculate-button{
+        background-color: green;
+        color: white;
+        border: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+      }
+
+      .rock-paper-scissors-title{
+        margin-top: 55px;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button onclick="
+      subscribe();
+    " class="js-subscribe-button subscribe-button"> <!--We can add multiple classes to HTML element by adding space between classes.-->
+      Subscribe
+    </button>
+
+    <p>Amazon Shipping Calculator</p>
+    
+    <p>Orders under $40 = +$10 shipping</p>
+
+    <p>Orders over $40 = FREE shipping</p>
+    
+    <input placeholder="Cost of order" class="cost-input js-cost-input" onkeydown="
+      handleCostKeydown(event);
+    ">
+    <button class = "calculate-button",onclick="
+      calculateTotal();
+    ">Calculate</button>
+    <p class="js-total-cost"></p>
+
+    <p class="rock-paper-scissors-title">Rock Paper Scissors</p>
+    <a href="https://supersimple.dev/projects/rock-paper-scissors/">Click here</a>
+    <script>
+      String(25) //built in method to convert value of another datatype into strings.
+      console.log('25' - 5); //Type Coercion or automatic type conversion
+      console.log('25' + 5);
+      //The document object represents the webpage, the window object represents the browser.
+      window.document
+      window.console.log('window');
+      window.alert
+
+      function handleCostKeydown(event) {
+        if (event.key === 'Enter') {
+          calculateTotal();
+        }
+      }
+
+      function calculateTotal() {
+        const inputElement = document.querySelector('.js-cost-input');
+        //by default when we get value from inputElement, it is string, we have to convert it to another type for performing computation.
+        let cost = Number(inputElement.value); 
+
+        if (cost < 40) { //clicks, keydowns => events. onclick, onkeydown => event listeners.
+          cost = cost + 10;
+        }
+
+        document.querySelector('.js-total-cost')
+          .innerHTML = `$${cost}`;
+      }
+
+      function subscribe() {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if (buttonElement.innerText === 'Subscribe') {
+          buttonElement.innerHTML = 'Subscribed';
+          //classlist gives us control over the class attribute.
+          //When we click the subscribe button, we will add a class having different styles.
+          //classList itself is an object. It has properties/methods we can use.
+          //.add() method adds a class to an element.
+          buttonElement.classList.add('is-subscribed');
+        } else {
+          buttonElement.innerHTML = 'Subscribe';
+          //'classList.remove' remove class from the HTML Element
+          buttonElement.classList.remove('is-subscribed');
+        }
+      }
+      
+    </script>
+  </body>
+</html>

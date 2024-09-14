@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_11-i
+    </title>
+  </head>
+  <body>
+    <script>
+      function addNum(array, num){
+        const new_array = [];
+        for(let index=0; index<array.length;  index++){
+          new_array[index] = array[index] + num;
+        }
+        return new_array;
+      }
+
+      console.log(addNum([1, 2, 3], 2));
+      console.log(addNum([1, 2, 3], 3));
+      console.log(addNum([-2, -1, 0, 99], 2));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_11-n
+    </title>
+  </head>
+  <body>
+    <script>
+      const words = ['apple', "grape", 'apple', 'apple'];
+      
+      const StringCount = {
+        word: [],
+        count: []
+      };
+
+      function countWords(Words){
+        let count=0; 
+        for(let index=0; index<Words.length; index++){
+          console.log('for-loop executed');
+          console.log(StringCount.word.includes([Words[index]]));
+          
+            StringCount.word[index] = Words[index];
+            console.log('conditional statement executed');
+            count++;
+            console.log(StringCount.word);
+          
+          
+        }
+        console.log(count);
+      }
+      
+      countWords(words);
+    </script>
+  </body>
+</html>

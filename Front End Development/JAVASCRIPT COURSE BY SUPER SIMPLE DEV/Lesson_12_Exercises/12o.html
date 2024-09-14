@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise_12-o</title>
+  </head>
+  <body>
+    <script>
+      const removeEggs = function (array){
+        let countofEgg=0;
+        return array.filter((value) => {
+          if(value=='egg' && countofEgg<2){
+            countofEgg++;
+            return false;
+            
+          }
+          else{
+            return true;
+          }
+        });
+      };
+
+      console.log(removeEggs(['egg', 'apple', 'egg', 'egg', 'ham']));
+      console.log(removeEggs(['apple', 'egg', 'mango', 'banana', 'egg', 'peach', 'egg']));
+
+    </script>
+  </body>
+</html>

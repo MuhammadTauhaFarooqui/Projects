@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_12-f
+    </title>
+  </head>
+  <body>
+    <button class="js-button">Add to Cart</button>
+    
+    <p class="js-message"></p>
+    
+    <script>
+      document.querySelector('.js-button').addEventListener('click', ()=>{displayMessage();});
+      let timeoutId;
+      displayMessage = () => {
+        document.querySelector('.js-message').innerHTML = "Added";    
+        //first cancel the previous time out so that it doesn't remove the message so quicky.
+        clearTimeout(timeoutId);
+
+        timeoutId = setTimeout(()=>{
+          document.querySelector('.js-message').innerHTML = '';
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

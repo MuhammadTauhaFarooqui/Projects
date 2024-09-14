@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_8-i
+    </title>
+  </head>
+  <body>
+    <button onclick = "
+      playgame('heads');
+    ">
+      heads
+    </button>
+    <button onclick = "
+      playgame('tails');
+    ">
+      tails
+    </button>
+    <script>
+      function playgame(guess){
+        const randomnumber = Math.random();
+        let result = '';
+        if(randomnumber<0.5){
+          result = 'heads';
+        }
+        else{
+          result = 'tails';
+        }
+        if(guess == result){
+          console.log('You win');
+        } 
+        else{
+          console.log('You lose');
+        }
+      }
+      
+      
+    </script>
+  </body>
+</html>

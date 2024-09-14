@@ -1,0 +1,30 @@
+.Apply-button{
+  background-color: rgb(10, 102, 194);
+  color: white; 
+  border: none;
+  width: 210px;
+  height: 35px; 
+  border-radius: 17.5px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.Apply-button:hover{
+  background-color: rgba(0, 59, 185, 0.993);
+}
+
+.Save-button{
+  background-color: white;
+  color: rgb(36, 116, 207);
+  border: 1px solid blue;
+  border-color: rgb(5, 125, 245);
+  height: 35px;
+  width: 75px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.Save-button:hover{
+  background-color: rgb(166, 200, 241);
+  font-weight: bold;
+  border-width: 2px;
+}

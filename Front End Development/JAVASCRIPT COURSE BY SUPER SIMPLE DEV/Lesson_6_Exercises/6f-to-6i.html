@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <TITLE>Coin Flip Game</TITLE>
+  </HEAD>
+  <BODY>
+    <script>
+      //Exercise 6f
+      var random_Number = Math.random();
+      
+      /*
+      //Exercise 6g
+      if(random_Number<0.5){
+        console.log('heads');
+      }
+      else{
+        console.log('tails');
+      }
+      */
+      
+      //Exercise 6h
+      var result = '';
+      if(random_Number<0.5){
+        result = 'heads';
+      }
+      else{
+        result = 'tails';
+      }
+
+      //Exercise 6i
+      var guess = 'tails';
+      if(guess==result){
+        console.log('You win!');
+      }
+      else{
+        console.log('You lose!');
+      }
+    </script>
+  </BODY>
+</HTML>

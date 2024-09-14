@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>
+        Rock Paper Scissors
+      </title>
+    </head>
+    <body>
+      <!--Scope of a variable, A Scope limits where a variable exists-->
+
+      <!-- If random number is between 0 and 1/3 then rock-->
+      <!--If random number is between 1/3 and 2/3 then paper-->
+      <!--If random number is between 2/3 and 1 then scissors-->
+      <p>Rock Paper Scissors</p>
+      <!--Logical Operators are used to combine boolean values(And and OR)-->
+      <!--Any Variable we create inside {} Will only exist inside the {}-->
+      <button onclick = "
+        const randomNumber = Math.random(); //Math.random() function generates a random number between 0 and 1
+        
+        let computerMove = '';
+        if(randomNumber >= 0 && randomNumber < 1 / 3){
+          computerMove = 'rock';
+        }
+
+        if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+          computerMove = 'paper';
+        }
+
+        if(randomNumber >= 2 / 3 && randomNumber < 1){
+          computerMove = 'scissors';
+            
+        }
+
+        let result = '';
+        
+        if(computerMove == 'rock'){
+          result = 'Tie.';
+        }
+        else if(computerMove == 'paper'){
+          result = 'You lose.';
+        }
+        else if(computerMove == 'scissors'){
+          result = 'You win.';
+        }
+      
+        alert('You picked rock. Computer picked ' + computerMove + '. ' + result);  
+      
+      
+      
+      ">Rock</button>
+      
+      <button onclick="
+        randomNumber = Math.random(); //Math.random() function generates a random number between 0 and 1
+        
+        computerMove = '';
+        if(randomNumber >= 0 && randomNumber < 1 / 3){
+          computerMove = 'rock';
+        }
+
+        if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+          computerMove = 'paper';
+        }
+
+        if(randomNumber >= 2 / 3 && randomNumber < 1){
+          computerMove = 'scissors';
+            
+        }
+
+        result = '';
+        
+        if(computerMove == 'rock'){
+          result = 'You win.';
+        }
+        else if(computerMove == 'paper'){
+          result = 'Tie.';
+        }
+        else if(computerMove == 'scissors'){
+          result = 'You lose.';
+        }
+      
+        alert('You picked paper. Computer picked ' + computerMove + '. ' + result);  
+      ">Paper</button>
+      
+      <button onclick = "
+         randomNumber = Math.random(); //Math.random() function generates a random number between 0 and 1
+        
+        computerMove = '';
+        if(randomNumber >= 0 && randomNumber < 1 / 3){
+          computerMove = 'rock';
+        }
+
+        if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+          computerMove = 'paper';
+        }
+
+        if(randomNumber >= 2 / 3 && randomNumber < 1){
+          computerMove = 'scissors';
+            
+        }
+
+        result = '';
+        
+        if(computerMove == 'rock'){
+          result = 'You lose.';
+        }
+        else if(computerMove == 'paper'){
+          result = 'You win.';
+        }
+        else if(computerMove == 'scissors'){
+          result = 'Tie.';
+        }
+      
+        alert('You picked scissor. Computer picked ' + computerMove + '. ' + result);
+      ">
+      Scissors</button>
+    </body>
+  </html>

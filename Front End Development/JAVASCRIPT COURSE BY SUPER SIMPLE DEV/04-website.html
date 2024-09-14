@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+    HTML CSS Review
+    </title>
+
+    <style>
+    .red-button{
+    background-color: red;
+    color: white;
+    border: none;
+    }
+
+    .yellow-button{
+    background-color: yellow;
+
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <!--title attribute adds a tooltip to the button-->
+    <!--when we hover over a button, the text shown is known as tooltip.-->
+    <!--The onclick attribute contains javascript code which executes when the user selects the button-->
+    <!--The code inside the onclick attribute runs after(when the web page is loaded)-->
+    <button title="Good job!" class="red-button" 
+      onclick = "
+        alert('Good job!');
+      
+      ">
+      hello
+    </button>
+
+    <p>
+      paragraph of <button 
+      class="yellow-button">hello</button> text
+    </p>
+    
+    <!-- Script tag is used to write javascript code inside HTML file.-->
+    <!-- Script element runs first(when the web page is loaded).-->
+    <script>
+      //This is a single line comment.
+      //This code creates a popup.
+      //alert('hello');
+
+      /*
+      This 
+      is 
+      a 
+      multiline 
+      comment
+      */
+     console.log(2 + 2);
+     console.log('some ' + 'text');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_12-n
+    </title>
+  </head>
+  <body>
+    <script>
+      const removeEggs = function (array){
+        return array.filter((value) => {
+          if(value==='egg'){
+            return false;
+          }
+          else{
+            return true;
+          }
+        });
+      };
+
+      console.log(removeEggs(['egg', 'apple', 'egg', 'egg', 'ham']));
+      console.log(removeEggs(['apple', 'egg', 'mango', 'banana', 'egg']));
+    </script>
+  </body>
+</html>

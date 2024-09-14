@@ -1,0 +1,9 @@
+.grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.profile-picture{
+  width: 200px;
+  height: 200px;
+}

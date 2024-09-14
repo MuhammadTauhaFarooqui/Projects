@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_7-f
+    </title>
+  </head>
+  <body>
+    <script>
+      function convertTempreture(degrees, unit){
+        if(unit=='C'){
+          const result = ((degrees*(9/5)) + 32);
+          return `${result}F`
+        }
+        else if(unit=='F'){
+          const result = ((degrees-32)*(5/9));
+          return `${result}C`
+        }
+      }
+      console.log(convertTempreture(25, 'C'));
+      console.log(convertTempreture(86, 'F'));
+    </script>
+  </body>
+</html>

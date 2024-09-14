@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_11-o
+    </title>
+  </head>
+  <body>
+    <script>
+      const array1 = ['hello', 'world', 'search', 'good'];
+      const array2 = ['not', 'found'];
+      
+      function PrintSearch(array){
+        let status = -1;
+        for(let index=0; index<array.length; index++){
+          if(array[index]=='search'){
+            status = index;
+          }
+        }
+        console.log(status);
+      }
+
+      PrintSearch(array1);
+      PrintSearch(array2);
+    </script>
+  </body>
+</html>

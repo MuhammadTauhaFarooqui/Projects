@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_12-c
+    </title>
+  </head>
+  <body>
+    <button class="start-button">Start</button>
+    <script>
+      document.querySelector('.start-button').addEventListener('click', ()=>setTimeout(()=>{
+        document.querySelector('.start-button').innerHTML = 'Finished!';
+      }, 1000));  
+    </script>
+  </body>
+</html>

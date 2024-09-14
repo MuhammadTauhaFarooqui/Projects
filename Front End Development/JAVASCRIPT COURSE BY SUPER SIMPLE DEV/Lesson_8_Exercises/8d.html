@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_8-d
+    </title>
+  </head>
+  <body>
+    <script>
+      const product_1 = {
+        name: 'basketball',
+        price: 1095 
+      };
+      
+      const product_2 = {
+        name: 'tennisball',
+        price: 250
+      };
+      
+      function comparePrice(product1, product2){
+        if(product1.price>product2.price){
+          console.log(`${product2.name} is less expensive`);
+        }
+        else if(product1.price<product2.price){
+          console.log(`${product1.name} is less expensive`);
+        }
+        else{
+          console.log(`${product1.name} and ${product2.name} has same price`);
+        }
+      }
+
+      comparePrice(product_1, product_2);
+    </script>
+  </body>
+</html>

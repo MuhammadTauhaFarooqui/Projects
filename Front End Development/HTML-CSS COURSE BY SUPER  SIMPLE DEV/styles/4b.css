@@ -1,0 +1,65 @@
+.link1{
+  padding-left: 3px;
+}
+.link2{
+  padding-left: 3px;
+}
+.link3{
+  padding-left: 3px;
+}
+.link4{
+  padding-left: 3px;
+}
+.Back-Button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 8px;
+  font-weight: bold;
+
+}
+.Next-Button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+.stretch-button{
+  background-color: green;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: none;
+  margin-left: 15px;
+}
+.Shadow-Button{
+  background-color: green;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.Shadow-Button:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.One-button{
+  background-color: green;
+  color: white;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-right: 8px;
+}
+

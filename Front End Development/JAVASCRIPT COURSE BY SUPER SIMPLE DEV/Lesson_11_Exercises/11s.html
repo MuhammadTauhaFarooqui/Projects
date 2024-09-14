@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise_11-s
+    </title>
+  </head>
+  <body>
+    <script>
+      function removeEgg(foods){
+        const result = [];
+        let countofegg=0;
+        for(let index=0; index<foods.length; index++){
+          
+          if(foods[index]==='egg' && countofegg<2){
+            //console.log('if-statement executed')
+            countofegg++;
+            continue;
+          }
+          else{
+            result.push(foods[index]);
+          }
+        }
+        return result;
+      }
+      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+      console.log(removeEgg(['egg', 'orange', 'mango', 'egg', 'peach', 'egg']));
+    </script>
+  </body>
+</html>

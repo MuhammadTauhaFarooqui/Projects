@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      DOM
+    </title>
+  </head>
+  <body>
+    <button>
+      hello
+    </button>
+    <button class="js-button">
+      Second button
+    </button>
+    
+    <script>
+      //HTML elements are javascript objects.
+      
+      //Query Selecter is a method which selects the code from the body tag and put it inside javascript code.
+      console.log(document.querySelector('button'));
+
+      //Every HTML element has a property .innerHTML.
+      console.log(document.querySelector('button').innerHTML);
+
+      //We can change the text inside the button using query selector.
+      document.querySelector('button').innerHTML = 'Changed';
+
+      //We can also refer the button in javascript code by using '.' and its class name.
+      const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+      /*
+      console.log(document.title);
+      document.title = 'Changed';
+      console.log(document.body); //The HTML element is converted into javascript object.
+      console.log(typeof document.body);
+
+      console.log(document.body.innerHTML); //innerHTML includes all the code inside the HTML body tag.
+
+      document.body.innerHTML = 'Changed';
+
+      //we can also add content by addressing body.innerHTML
+      document.body.innerHTML = '<button>Good job!</button>';
+      
+      //Method is basically a function saved inside an object.
+      */
+      
+      /*
+      Document Object Model(DOM) is another built-in Object in JavaScript. 
+      The Document Object Model represents/models the webpage.
+      The Document Object Model combines HTML and javascript together.
+      The Document Object Model gives javascript full control of the web-page. 
+      document.body.innerHTML = "hello";
+      document.title = 'Document Object Model!';
+      */
+       
+    </script>
+  </body>
+</html>
