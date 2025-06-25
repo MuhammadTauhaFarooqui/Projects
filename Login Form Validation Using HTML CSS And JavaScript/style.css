@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Login-Heading {
+    /* color: blue; */
+    color:white;
+    text-transform: uppercase;
+    font-weight: 780;
+    align-self: center;
+}
+
+.username,
+.password {
+    position: relative;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    font-size: 20px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    /* border: 3px solid #0367fd; */
+    border: 1.5px solid rgba(112, 108, 108, 0.884);
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: all .2s ease-in;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 250px;
+    border-color: rgb(169, 13, 88);
+
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url('futuristic-background-design_23-2148503793.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box {
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px;
+    /* border:2px solid orangered; */
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow:0 2px 2px rgb(169, 13, 88), 2px 0 2px #003cffef;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    /* border: 2px solid white; */
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    /* color: white; */
+    color:#003cffef;
+    height: 1rem;
+    width: 1rem;
+    padding-top: 1px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+#btn {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 35px;
+    outline: none;
+    font-size: 18px;
+    color: #003cffef;
+    border: 3px solid currentColor;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: rgb(169, 13, 88);
+    font-weight:850;
+}
